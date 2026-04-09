@@ -54,6 +54,7 @@ class OpcUaService:
         return self.dados_maquinas
         
     def obter_dados_maquina(self, maquina_id: str) -> dict:
-        return self.dados_maquinas.get(maquina_id, None)
+        maquina_id_formatado = maquina_id.upper()
+        return self.dados_maquinas.get(maquina_id_formatado)
 
 opcua_service = OpcUaService()

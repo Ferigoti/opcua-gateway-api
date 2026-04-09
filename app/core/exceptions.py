@@ -17,7 +17,7 @@ async def global_exception_handler(request: Request, exc: Exception):
 
 async def http_exception_handler(request: Request, exc: HTTPException):
     """ Captura os erros normais de regra de negócio lançados nas rotas """
-    if isinstance(exec.detail, dict) and "enTag" in exc.detail:
+    if isinstance(exc.detail, dict) and "enTag" in exc.detail:
         conteudo = exc.detail
     else:
         conteudo = {
