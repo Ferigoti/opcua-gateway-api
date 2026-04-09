@@ -24,9 +24,9 @@ Para facilitar os testes sem a necessidade de um CLP físico, o projeto acompanh
 
 **1. Clone o repositório e prepare o ambiente:**
 ```bash
-git clone [https://github.com/Ferigoti/seu-repositorio.git](https://github.com/Ferigoti/seu-repositorio.git)
+git clone [https://github.com/Ferigoti/opcua-gateway-api.git](https://github.com/Ferigoti/opcua-gateway-api.git)
 
-cd seu-repositorio
+cd opcua-gateway-api
 
 cp .env.example .env
 ```
